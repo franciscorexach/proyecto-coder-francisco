@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-style: border-box;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body {
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #44546e;
+    background-image: url(images/sky.jpeg);
+    background-size: cover;
+}
+.grid-container-header{
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template:
+        "logo" "header-titulo"
+        "logo" "header-slogan";
+    justify-content: center;
+    align-items: center;
+}
+.container-index{
+    display: flex;
+    flex-wrap: wrap;
+    height: 60vh;
+    width: 100vw;
+    align-items: flex-start;
+}
+.container-resto{
+    display: flex;
+    flex-wrap: wrap;
+    height: 60vh;
+    width: 100vw;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+    margin-bottom: 10vh;  
+}
+.container-resto2{
+    display: flex;
+    flex-wrap: wrap;
+    height: 60vh;
+    width: 100vw;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin-top: 0vh;
+    margin-bottom: 10vh;
+    margin-right: 10vw; 
+}
+.container-resto3{
+    display: flex;
+    flex-wrap: wrap;
+    height: 60vh;
+    width: 100vw;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-right: 10vw; 
+}
+nav{
+    margin-bottom: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: grid;
+    margin: 10px 10px 10px 10px;
+}
+a{
+    text-decoration: none;
+    color: #44546e;
+}
+ul{
+    list-style: none;
+    margin-left: 2vw;
+}
+li{
+    display: inline;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    font-size: 4vh;
+}
+h1{
+    font-size: 8vw;
+    width: 100%;
+    height: 100%;
+    margin-left: 15vw;
+}
+h2{
+    font-size: 5vh;
+    width: 80%;
+    height: 100%;
+    margin-left: 20vw;
+}
+.justificado{
+    text-align: justify;
+    margin-bottom: 10vh;
+    margin-left: 5vw;
+}
+p{
+    text-align: center;
+    margin: 5vh;
+}
+.logo{
+    grid-area: logo;
+    grid-column: span 1;
+    grid-row: span 2;
+    border: solid;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    justify-content: center;
+}
+.header-titulo{
+    grid-area: header-titulo;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.header-slogan{
+    grid-area: header-slogan;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.imagen{
+    background-color: white;
+    border: 3px solid #44546e;
+    width: 30vw;
+    height: 40vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-left: 1vw;
+}
+.imagen2{
+    background-color: white;
+    border: 3px solid #44546e;
+    width: 30vw;
+    height: 40vh;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.imagenes{
+    width: 20vw;
+    height: 30vh;
+}
+#footer-text{
+    text-align: center;
+    align-items: flex-end;
+}
+#contactanos{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh;
+}
+#titulo-contacto{
+    text-align: center;
+    margin-left: 10vw;
+}
+
+@media (max-width: 840px) {
+li {
+    display: block;
+}
+}
+
+@media (max-width: 590px) {
+    .grid-container-header {
+        display: block;
+    }
+    .container-index {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1vh;
+    }
+    .container-resto2 {
+        margin-top: 5vh;
+    }
+    .justificado {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        font-size: 3vh;
+    }
+    .imagen {
+        height: 30vh;
+        width: 50vw;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
+    }
+    .imagen2 {
+        height: 30vh;
+        width: 35vw;
+    }
+    h1 {
+        justify-content: left;
+    }
+    h2 {
+        font-size: 3vh;
+        margin-left: 15vw;
+    }
+    .imagenes {
+        width: 10vw;
+        height: 20vh;
+    }
+    header {
+        height: 20%;
+        }
+    ul {
+    margin-bottom: 1vh;
+    }
+    li {
+    font-size: 3vh;
+    }
+    main {
+        height: 50%;
+        margin: 1vh 1vw 1vh 1vw;
+    }
+    nav {
+        height: 10%;
+        margin-bottom: 0vh;
+        margin-top: 5vh;
+    }
+    #contactanos {
+        margin-left: 0vw;
+    }
+    footer {
+        height: 20%;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+}
